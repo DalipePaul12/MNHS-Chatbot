@@ -500,3 +500,39 @@ body::after {
     padding: 4px 10px;
   }
 }
+
+@supports (-webkit-touch-callout: none) {
+  .cw {
+    height: -webkit-fill-available;
+  }
+
+  .card {
+    height: -webkit-fill-available;
+  }
+}
+
+@media (max-width: 600px) {
+  .cw {
+    padding: 0;
+    height: 100dvh;
+  }
+
+  .card {
+    height: 100dvh;
+    border-radius: 0;
+  }
+
+  .input-bar {
+    position: sticky;
+    bottom: 0;
+    background: white;
+    z-index: 100;
+  }
+
+  .suggestions {
+    position: sticky;
+    bottom: 72px;
+    background: white;
+    z-index: 99;
+  }
+}
