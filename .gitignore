@@ -1,0 +1,32 @@
+# Python
+backend/venv/
+backend/__pycache__/
+backend/*.pyc
+backend/.env
+
+# Backend specific
+backend/*.db
+backend/*.sqlite
+backend/logs/
+backend/*.log
+
+# Node
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+
+# OS
+.DS_Store
+Thumbs.db
+Thumbs.db:encryptable
+Desktop.ini
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# Environment files (NEVER upload these)
+.env
+.env.local
+.env.production
+*.env
