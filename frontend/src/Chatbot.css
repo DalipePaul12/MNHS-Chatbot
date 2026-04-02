@@ -430,6 +430,7 @@ body::after {
 }
 
 /* ===== RESPONSIVE ===== */
+/* ===== RESPONSIVE ===== */
 @media (max-width: 600px) {
   .cw {
     padding: 0;
@@ -437,6 +438,21 @@ body::after {
   .card {
     border-radius: 0;
   }
+  
+  /* Lock the header to the top */
+  .header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+  }
+  
+  /* Push the chat messages down so they don't hide behind the locked header */
+  .messages {
+    padding-top: 90px; 
+  }
+  
   .bubble {
     max-width: 85%;
   }
